@@ -1,0 +1,6 @@
+sample_texts = ["Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005"]
+
+txts = tok.texts_to_sequences(sample_texts)
+txts = sequence.pad_sequences(txts, maxlen=max_len)
+preds = model.predict(txts)
+sample_text
